@@ -10,7 +10,7 @@ public class Blogg {
 	// TODO: objektvariable 
 
 	public Blogg() {
-		innleggtabell = new Inlegg[20];
+		innleggtabell = new Innlegg[20];
 		nesteledige = 0;
 	}
 
@@ -20,17 +20,16 @@ public class Blogg {
 	}
 
 	public int getAntall() {
-		
+		return nesteledige;
 	}
 	
 	public Innlegg[] getSamling() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return innleggtabell;
 	}
 	
 	public int finnInnlegg(Innlegg innlegg) {
+		
 
-		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public boolean finnes(Innlegg innlegg) {
