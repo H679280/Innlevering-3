@@ -11,16 +11,14 @@ public abstract class Innlegg {
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
-
-		// TODO 
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+		this.id = id;
+		this.bruker = bruker;
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
-
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+		this.id = id;
+		this.bruker = bruker;
+		this.likes = 0;
 	}
 	
 	public String getBruker() {
