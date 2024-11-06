@@ -29,7 +29,7 @@ public class Blogg {
 
 	public int finnInnlegg(Innlegg innlegg) {
 		for (int i = 0; i < innleggtabell.length; i++) {
-			if (innleggtabell[i].erLik(innlegg)) {
+			if (innleggtabell[i].erLik(innlegg) && innleggtabell[i]!=null) {
 				return i;
 
 			}
@@ -64,29 +64,30 @@ public class Blogg {
 	}
 
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		return 
 	}
+}
 
 	// valgfrie oppgaver nedenfor
 
-	public void utvid() {
-		throw new UnsupportedOperationException(TODO.method());
-	}
-
-	public boolean leggTilUtvid(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
-
-	}
-
-	public boolean slett(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
-	}
-
-	public int[] search(String keyword) {
-
-		throw new UnsupportedOperationException(TODO.method());
-
-	}
-}
+//	public void utvid() {
+//		throw new UnsupportedOperationException(TODO.method());
+//	}
+//
+//	public boolean leggTilUtvid(Innlegg innlegg) {
+//
+//		throw new UnsupportedOperationException(TODO.method());
+//
+//	}
+//
+//	public boolean slett(Innlegg innlegg) {
+//
+//		throw new UnsupportedOperationException(TODO.method());
+//	}
+//
+//	public int[] search(String keyword) {
+//
+//		throw new UnsupportedOperationException(TODO.method());
+//
+//	}
+//}
