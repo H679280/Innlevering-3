@@ -7,7 +7,7 @@ public class Blogg {
 	private Innlegg[] innleggtabell;
 	private int nesteledige;
 
-	// TODO: objektvariable 
+	// TODO: objektvariable
 
 	public Blogg() {
 		innleggtabell = new Innlegg[20];
@@ -22,18 +22,25 @@ public class Blogg {
 	public int getAntall() {
 		return nesteledige;
 	}
-	
+
 	public Innlegg[] getSamling() {
 		return innleggtabell;
 	}
-	
+
 	public int finnInnlegg(Innlegg innlegg) {
-		
+		for (int i = 0; i < innleggtabell.length; i++) {
+			if (innleggtabell[i].erLik(innlegg)) {
+				return i;
+
+			}
+
+		}
+		return -1;
 
 	}
 
 	public boolean finnes(Innlegg innlegg) {
-		for (int i = 0; i<nesteledige; i++) {
+		for (int i = 0; i < nesteledige; i++) {
 			if (innleggtabell[i].getId() == innlegg.getId()) {
 				return true;
 			}
@@ -42,38 +49,38 @@ public class Blogg {
 	}
 
 	public boolean ledigPlass() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return nesteledige<innleggtabell.length;
+		
 	}
-	
+
 	public boolean leggTil(Innlegg innlegg) {
 
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public String toString() {
 		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	// valgfrie oppgaver nedenfor
-	
+
 	public void utvid() {
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public boolean leggTilUtvid(Innlegg innlegg) {
 
 		throw new UnsupportedOperationException(TODO.method());
-		
+
 	}
-	
+
 	public boolean slett(Innlegg innlegg) {
-		
+
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public int[] search(String keyword) {
-		
+
 		throw new UnsupportedOperationException(TODO.method());
 
 	}
