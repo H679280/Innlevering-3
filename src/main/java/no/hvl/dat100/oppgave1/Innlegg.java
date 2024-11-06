@@ -50,9 +50,6 @@ public abstract class Innlegg {
 
 	}
 	
-	public void setId() {
-		this.id = id;
-	}
 
 	public int getLikes() {
 	return likes;
