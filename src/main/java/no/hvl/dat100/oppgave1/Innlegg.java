@@ -46,21 +46,21 @@ public abstract class Innlegg {
 	}
 
 	public int getId() {
-		return id;
+		return ID;
 
 	}
 	
 	public void setId() {
-		this.id = id;
+		this.ID = ID;
 	}
 
 	public int getLikes() {
-	
+	return likes;
 
 	}
 	
 	public void doLike () {
-		throw new UnsupportedOperationException(TODO.method());
+	likes+=1;
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
