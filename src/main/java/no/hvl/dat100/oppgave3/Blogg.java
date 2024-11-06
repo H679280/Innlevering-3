@@ -49,7 +49,12 @@ public class Blogg {
 	}
 
 	public boolean ledigPlass() {
-		return nesteledige<innleggtabell.length;
+		for (int i = 0; i < innleggtabell.length; i++) {
+	        if (innleggtabell[i] == null) {
+	            return true;  
+	        }
+	    }
+	    return false; 
 		
 	}
 
