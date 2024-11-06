@@ -5,22 +5,22 @@ import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
 	private Innlegg[] innleggtabell;
-	private int nesteledige;
+	private int nesteledig;
 
 	// TODO: objektvariable
 
 	public Blogg() {
 		innleggtabell = new Innlegg[20];
-		nesteledige = 0;
+		nesteledig = 0;
 	}
 
 	public Blogg(int lengde) {
 		innleggtabell = new Innlegg[lengde];
-		nesteledige = 0;
+		nesteledig = 0;
 	}
 
 	public int getAntall() {
-		return nesteledige;
+		return nesteledig;
 	}
 
 	public Innlegg[] getSamling() {
@@ -28,7 +28,7 @@ public class Blogg {
 	}
 
 	public int finnInnlegg(Innlegg innlegg) {
-		for (int i = 0; i < innleggtabell.length; i++) {
+		for (int i = 0; i < nesteledig; i++) {
 			if (innleggtabell[i].erLik(innlegg)) {
 				return i;
 
@@ -40,7 +40,7 @@ public class Blogg {
 	}
 
 	public boolean finnes(Innlegg innlegg) {
-		for (int i = 0; i < nesteledige; i++) {
+		for (int i = 0; i < nesteledig; i++) {
 			if (innleggtabell[i].getId() == innlegg.getId()) {
 				return true;
 			}
@@ -59,8 +59,13 @@ public class Blogg {
 	}
 
 	public boolean leggTil(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
+		if (!finnes(innlegg) && ledigPlass()) {
+			innleggtabell[nesteledig] = innlegg;
+			nesteledig++;
+			return true;
+		}
+		return false;
+		
 	}
 
 	public String toString() {
