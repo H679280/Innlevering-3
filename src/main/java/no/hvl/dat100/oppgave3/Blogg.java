@@ -33,7 +33,12 @@ public class Blogg {
 	}
 
 	public boolean finnes(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		for (int i = 0; i<nesteledige; i++) {
+			if (innleggtabell[i].getId() == innlegg.getId()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public boolean ledigPlass() {
