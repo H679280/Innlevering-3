@@ -13,7 +13,7 @@ public class Bilde extends Tekst {
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		super(id, bruker, dato, tekst);
+		super(id, bruker, dato, likes, tekst);
 		this.url=url;
 	}
 	
@@ -28,7 +28,7 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-	return "Tekst\n" + getId() + "\n" + getBruker() + "\n" + getDato() + "\n" + getLikes() + "\n" +getTekst() + "\n" + url + "\n";
+	return "BILDE\n" + getId() + "\n" + getBruker() + "\n" + getDato() + "\n" + getLikes() + "\n" +getTekst() + "\n" + url + "\n";
 
 	}
 
