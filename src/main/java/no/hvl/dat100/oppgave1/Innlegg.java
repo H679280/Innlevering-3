@@ -44,12 +44,12 @@ public abstract class Innlegg {
 	}
 
 	public int getId() {
-		return ID;
+		return id;
 
 	}
 	
 	public void setId() {
-		this.ID = ID;
+		this.id = id;
 	}
 
 	public int getLikes() {
