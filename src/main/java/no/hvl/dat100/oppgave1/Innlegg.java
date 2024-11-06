@@ -8,7 +8,7 @@ public abstract class Innlegg {
 	private String dato;
 	private int likes;
 	
-	
+
 	
 	public Innlegg() {
 		
@@ -68,8 +68,7 @@ public abstract class Innlegg {
 	
 	@Override
 	public String toString() {
-		
-		throw new UnsupportedOperationException(TODO.method());
+		return id + "\n" + bruker + "\n" + dato + "\n" + likes +"\n";
 				
 	}
 	
