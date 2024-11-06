@@ -17,11 +17,13 @@ public abstract class Innlegg {
 	public Innlegg(int id, String bruker, String dato) {
 		this.id = id;
 		this.bruker = bruker;
+		this.dato = dato;
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
 		this.id = id;
 		this.bruker = bruker;
+		this.dato = dato;
 		this.likes = 0;
 	}
 	
@@ -62,9 +64,12 @@ public abstract class Innlegg {
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-
-	}
+			if (this.id == innlegg.id) {
+				return true;
+			}
+				
+			return false;
+		}
 	
 	@Override
 	public String toString() {
