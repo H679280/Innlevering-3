@@ -4,6 +4,13 @@ import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
+	
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
 	private Innlegg[] innleggtabell;
 	private int nesteledig;
 
@@ -77,7 +84,7 @@ public class Blogg {
 	        Innlegg innlegg = innleggtabell[i];
 	        
 	     
-	        resultat += innlegg.toString() + "\n";
+	        resultat += innlegg.toString();
 	    }
 	    
 	    return resultat;
