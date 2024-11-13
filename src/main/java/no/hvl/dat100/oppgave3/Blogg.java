@@ -67,6 +67,7 @@ public class Blogg {
 		return false;
 		
 	}
+	
 
 	public String toString() {
 	    String resultat = nesteledig + "\n";
